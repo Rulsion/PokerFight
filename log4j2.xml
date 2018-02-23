@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN" monitorinterval ="5">
+<Configuration status="debug" monitorinterval ="5">
 	<Appenders>
-		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
-		</Console>
-	</Appenders>
-	<Loggers>
-		<Root level="error">
-			<AppenderRef ref="Console" />
-		</Root>
-	</Loggers>
-</Configuration>
-<Configuration status="INFO" monitorinterval ="5">
-	<Appenders>
-		<Console name="Console" target="SYSTEM_OUT">
+		<Console name="File" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 	</Appenders>
